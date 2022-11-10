@@ -3,8 +3,15 @@ import java.util.*;
 
 public class Exercise1 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		sc.close();
+		int n; //Count limit
+		int i; //Increment
+		Scanner sc = new Scanner(System.in); //Scanner declared.
+		System.out.println("Introduce any number: "); //Program message to the user
+		n = sc.nextInt(); //User introduces limit.
+		for(i = 1; i <= n; i++) { //1º Initialization, 2º Condition, 3º Increment
+			System.out.println(i); //Iteration print
+		}
+		System.out.println("Have a nice day!");
+		sc.close(); //Scanner closed.
 	}
 }
-/*Escribir una aplicación para aprender a contar, que pedirá un número n y mostrará todos los números del 1 al n.*/
